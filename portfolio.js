@@ -14,6 +14,11 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all paragraphs in the columns section
 document.addEventListener("DOMContentLoaded", () => {
-  const paragraphs = document.querySelectorAll(".columns p");
-  paragraphs.forEach((p) => observer.observe(p));
+  try {
+    const paragraphs = document.querySelectorAll(".columns p");
+    paragraphs.forEach((p) => observer.observe(p));
+  } catch (error) {
+    // Gracefully handle if elements don't exist on the page
+    console.error("Error initializing scroll animations:", error);
+  }
 });

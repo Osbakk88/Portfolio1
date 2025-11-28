@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Christina's Portfolio</title>
+    <meta
+      name="description"
+      content="About Christina Anett Osbakk - Front-End Development student with a background in healthcare, passionate about web development and AI-assisted coding."
+    />
+    <meta
+      name="keywords"
+      content="front-end developer, web developer, about, biography, skills"
+    />
+    <meta name="author" content="Christina Anett Osbakk" />
+    <title>About Christina Osbakk - Front-End Developer</title>
     <link rel="stylesheet" href="style.css" />
     <script src="portfolio.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <div class="main">
-        <!-- Header Navigation -->
-        <nav class="page-nav">
-          <a href="index.html" class="nav-link">← Back to Home</a>
-        </nav>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <div class="container">
+      <div class="main" id="main-content">
         <!-- About Hero Section -->
         <section class="about-hero">
           <div class="about-hero-content">
@@ -25,24 +32,69 @@
           </div>
         </section>
 
+        <!-- Introduction with Icon -->
+        <section class="infoContainer">
+          <div class="devInfo">
+            <div class="about-layout">
+              <div class="floating-card">
+                <span class="code-icon">{ }</span>
+              </div>
+              <div class="text-content">
+                <div class="hello"><h2>Hello there</h2></div>
+                <div class="columns">
+                  <p>
+                    My name is Christina, and I'm a Front-End Development
+                    student with a long background in healthcare. For many years
+                    I worked closely with people, routines and complex systems —
+                    and along the way I discovered how much I enjoy solving
+                    problems, creating order and making things easier for
+                    others.
+                  </p>
+                  <p>
+                    That's what led me to front-end development. I love building
+                    clean interfaces, working visually in Figma and bringing
+                    designs to life with HTML, CSS and JavaScript.
+                  </p>
+                  <p>
+                    I'm curious by nature, detail-oriented, and I enjoy learning
+                    new tools — including using AI to improve workflows and code
+                    quality. I'm now working toward becoming a full-fledged
+                    front-end developer and building a portfolio that reflects
+                    both my creativity and my dedication.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Detailed About Section -->
         <section class="about-details">
           <div class="about-container">
             <div class="about-section">
               <h2>My Journey</h2>
               <p>
-                I am Christina Anett Osbakk, a front-end developer student at
-                Noroff. I started my journey in January 2024, and this is my
-                first portfolio. I am excited to learn more about web
-                development and design, constantly exploring new technologies
-                and best practices.
+                My journey into front-end development began with a growing
+                curiosity for how digital solutions are built, and how good
+                design can make information clearer and everyday tasks easier.
+                Since starting my studies in January 2024, I've been steadily
+                building my skills through hands-on projects, problem-solving
+                and continuous learning.
               </p>
               <p>
-                I am currently learning HTML, CSS, and JavaScript, with a
-                particular interest in creating responsive, accessible, and
-                user-friendly websites. I am looking forward to creating more
-                projects and improving my skills as I progress through my
-                studies.
+                What motivates me most is the process of turning ideas into
+                something visual and functional — from early sketches in Figma
+                to structured HTML, styled layouts and interactive JavaScript.
+                Every project teaches me something new, whether it's
+                accessibility, clean structure, responsiveness or better
+                workflow.
+              </p>
+              <p>
+                As I progress through my studies, I'm focused on expanding both
+                my technical skills and my ability to create intuitive,
+                user-friendly experiences. This portfolio represents the
+                beginning of that journey — and I'm excited for everything I'll
+                continue to build and learn along the way.
               </p>
             </div>
 
@@ -88,6 +140,9 @@
                 <a href="index.html#projects" class="btn btn-primary"
                   >View My Projects</a
                 >
+                <a href="index.html#contact" class="btn btn-outline"
+                  >Get In Touch</a
+                >
                 <a
                   href="assets/Christina_CV.pdf"
                   class="btn btn-outline"
@@ -97,6 +152,11 @@
               </div>
             </div>
           </div>
+        </section>
+
+        <!-- Back to Home Section -->
+        <section class="back-to-home">
+          <a href="index.html" class="btn btn-primary">← Back to Home</a>
         </section>
       </div>
     </div>

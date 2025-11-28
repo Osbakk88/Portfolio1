@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Christina's Portfolio</title>
+    <meta
+      name="description"
+      content="Christina Anett Osbakk - Front-End Development student showcasing web development projects, UI/UX design skills, and AI-assisted coding expertise."
+    />
+    <meta
+      name="keywords"
+      content="front-end developer, web developer, UI/UX design, portfolio, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Christina Anett Osbakk" />
+    <title>Christina Osbakk - Front-End Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="portfolio.js" defer></script>
   </head>
   <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Main Content -->
     <div class="container">
-      <div class="main">
+      <div class="main" id="main-content">
         <!-- Hero Section -->
         <section class="hero">
           <div class="hero-content">
@@ -20,7 +32,8 @@
             </p>
             <div class="hero-cta">
               <a href="#projects" class="btn btn-primary">View My Work</a>
-              <a href="/contact.html" class="btn btn-outline">Get In Touch</a>
+              <a href="about.html" class="btn btn-outline">About Me</a>
+              <a href="#contact" class="btn btn-outline">Get In Touch</a>
             </div>
           </div>
           <div class="hero-image">
@@ -34,64 +47,33 @@
           </div>
         </section>
 
-        <div class="infoContainer">
-          <div class="devInfo">
-            <div class="about-layout">
-              <div class="floating-card">
-                <span class="code-icon">{ }</span>
-              </div>
-              <div class="text-content">
-                <div class="hello"><h2>Hello there</h2></div>
-                <div class="columns">
-                  <p>
-                    I am Christina Anett Osbakk, a front end developer student
-                    at Noroff. I started my journey in January 2024. This is my
-                    first portfolio. I am excited to learn more about web
-                    development and design. I am currently learning HTML, CSS,
-                    and JavaScript. I am looking forward to creating more
-                    projects and improving my skills.
-                  </p>
-                  <p>
-                    In my free time, I enjoy reading books, watching movies, and
-                    spending time with my family and friends. I also love to
-                    travel and explore new places. I am passionate about
-                    technology and how it can be used to improve our lives.
-                  </p>
-                  <p>
-                    I am always looking for new challenges and opportunities to
-                    learn. If you have any questions or would like to connect,
-                    feel free to reach out to me.
-                  </p>
-                  <p>Thank you for visiting my portfolio!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- Skills Section -->
         <section class="skills">
           <h2 class="section-title">What I Do</h2>
           <div class="skills-grid">
             <div class="skill-card">
-              <div class="skill-icon">🎨</div>
+              <div class="skill-icon" role="img" aria-label="Design icon">
+                🎨
+              </div>
               <h3>UI/UX Design</h3>
               <p>Creating beautiful, user-friendly interfaces</p>
             </div>
             <div class="skill-card">
-              <div class="skill-icon">💻</div>
+              <div class="skill-icon" role="img" aria-label="Code icon">💻</div>
               <h3>Responsive Web</h3>
               <p>Mobile-first, accessible websites</p>
             </div>
             <div class="skill-card">
-              <div class="skill-icon">🤖</div>
+              <div class="skill-icon" role="img" aria-label="AI icon">🤖</div>
               <h3>AI-Assisted Coding</h3>
               <p>
                 Exploring innovative AI tools to enhance development workflow
               </p>
             </div>
             <div class="skill-card">
-              <div class="skill-icon">⚡</div>
+              <div class="skill-icon" role="img" aria-label="Performance icon">
+                ⚡
+              </div>
               <h3>Performance</h3>
               <p>Fast, optimized user experiences</p>
             </div>
@@ -135,6 +117,7 @@
                   href="https://github.com/osbakk88/Rainydays-24"
                   target="_blank"
                   rel="noopener"
+                  aria-label="View Rainydays project on GitHub (opens in new tab)"
                   >GitHub</a
                 >
                 <a
@@ -142,6 +125,7 @@
                   href="https://osbakk88.github.io/Rainydays-24/"
                   target="_blank"
                   rel="noopener"
+                  aria-label="View Rainydays live demo (opens in new tab)"
                   >Live Demo</a
                 >
               </div>
@@ -165,6 +149,7 @@
                   href="https://github.com/osbakk88/semester-project1"
                   target="_blank"
                   rel="noopener"
+                  aria-label="View Community Science Museum project on GitHub (opens in new tab)"
                   >GitHub</a
                 >
                 <a
@@ -172,6 +157,7 @@
                   href="https://osbakk88.github.io/semester-project1/"
                   target="_blank"
                   rel="noopener"
+                  aria-label="View Community Science Museum live demo (opens in new tab)"
                   >Live Demo</a
                 >
               </div>
@@ -195,6 +181,7 @@
                   href="https://github.com/osbakk88/Exam2"
                   target="_blank"
                   rel="noopener"
+                  aria-label="View Modehub project on GitHub (opens in new tab)"
                   >GitHub</a
                 >
                 <a
@@ -202,6 +189,7 @@
                   href="https://osbakk88.github.io/Exam2/"
                   target="_blank"
                   rel="noopener"
+                  aria-label="View Modehub live demo (opens in new tab)"
                   >Live Demo</a
                 >
               </div>
@@ -234,6 +222,51 @@
             </div>
           </div>
         </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="contact-intro">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities.
+          </p>
+          <div class="contact-links">
+            <a
+              href="mailto:osbakk88@hotmail.com"
+              class="contact-link"
+              aria-label="Send email to Christina Osbakk"
+            >
+              <span class="contact-icon" role="img" aria-label="Email icon"
+                >✉️</span
+              >
+              <span class="contact-label">Email Me</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/christina-anett-o-8b46602a8/"
+              class="contact-link"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit Christina's LinkedIn profile (opens in new tab)"
+            >
+              <span class="contact-icon" role="img" aria-label="LinkedIn icon"
+                >💼</span
+              >
+              <span class="contact-label">LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/Osbakk88"
+              class="contact-link"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit Christina's GitHub profile (opens in new tab)"
+            >
+              <span class="contact-icon" role="img" aria-label="GitHub icon"
+                >💻</span
+              >
+              <span class="contact-label">GitHub</span>
+            </a>
+          </div>
+        </section>
       </div>
     </div>
 
@@ -241,10 +274,6 @@
     <footer>
       <div class="container">
         <p>&copy; 2025 Christina's Portfolio. All rights reserved.</p>
-        <p>
-          <a href="/contact.html">Contact Me</a> |
-          <a href="/privacy.html">Privacy Policy</a>
-        </p>
       </div>
     </footer>
   </body>
