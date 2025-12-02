@@ -4,7 +4,7 @@ A modern, accessible portfolio website showcasing my front-end development proje
 
 ## 🌐 Live Demo
 
-Visit the live portfolio: [https://osbakk88.github.io/Portfolio-/](https://osbakk88.github.io/Portfolio-/)
+Visit the live portfolio: [https://osbakk88.github.io/Portfolio-/](https://osbakk88.github.io/Portfolio1)
 
 ## 📋 About
 
